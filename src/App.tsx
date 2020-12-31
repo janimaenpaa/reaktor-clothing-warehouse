@@ -7,7 +7,10 @@ const App: React.FC = () => {
     <Router>
       <AppBar />
       <Switch>
-        <Route exact path="/" render={Main} />
+        <Route exact path="/" component={Main} />
+        <Route path="/beanies" render={() => <div>Beanies</div>} />
+        <Route path="/facemasks" render={() => <div>Facemasks</div>} />
+        <Route path="/gloves" render={() => <div>Gloves</div>} />
       </Switch>
     </Router>
   );
